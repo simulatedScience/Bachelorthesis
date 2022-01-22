@@ -21,3 +21,9 @@ For example `vertical_best_worst_output.py` includes a method `get_param_setting
 The method `print_param_influcence_tables` in `result_output.py` assumes that the number of values for each parameter is always a factor of 6. This 6 should actually be the lowest common multiple of all numbers of values for the parameters.
 
 It's likely that there are a few similar issues that require a bit of work before using this program for other studies. It is also possible to combine the steps 2. and 3.1 of the workflow described above (automatically start step 3.1 after 2.).
+
+## Missing files
+
+Reproducing the experiments requires the ChemEx dataset and code to read that data into python. Since I did not write that code myself or assemble the dataset, I am not including those here. Both the data and code to read it were provided to me by Franz Bethke.
+
+The MNIST dataset used for the remaining experiments is included with Tensorflow and freely available online.
