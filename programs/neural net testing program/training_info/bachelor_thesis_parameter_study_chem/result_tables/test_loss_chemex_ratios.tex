@@ -1,0 +1,18 @@
+% best parameter values regarding \texttt{test_loss}
+\begin{longtable}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{parameter name} & \multicolumn{6}{c|}{\textbf{parameter values}} & \multicolumn{6}{c|}{\textbf{win ratios in \%}} & \multicolumn{6}{c|}{\textbf{avg. differences}} & \textbf{best value} \\
+\hline
+neurons per layer & \multicolumn{2}{c:}{(32,)} & \multicolumn{2}{c:}{(50, 10)} & \multicolumn{2}{c|}{(20, 15, 10)} & \multicolumn{2}{c:}{28.7} & \multicolumn{2}{c:}{68.1} & \multicolumn{2}{c|}{3.2} & \multicolumn{2}{c:}{0.014} & \multicolumn{2}{c:}{0.033} & \multicolumn{2}{c|}{0.056} & \textit{unclear} \\
+activation functions & \multicolumn{3}{c:}{ReLU} & \multicolumn{3}{c|}{sigmoid} & \multicolumn{3}{c:}{67.6} & \multicolumn{3}{c|}{32.4} & \multicolumn{3}{c:}{0.019} & \multicolumn{3}{c|}{0.063} & ReLU \\
+loss function & \multicolumn{3}{c:}{MSE} & \multicolumn{3}{c|}{log cosh} & \multicolumn{3}{c:}{56.8} & \multicolumn{3}{c|}{43.2} & \multicolumn{3}{c:}{0.012} & \multicolumn{3}{c|}{0.025} & MSE \\
+number of epochs & \multicolumn{2}{c:}{50} & \multicolumn{2}{c:}{150} & \multicolumn{2}{c|}{500} & \multicolumn{2}{c:}{2.8} & \multicolumn{2}{c:}{4.2} & \multicolumn{2}{c|}{93.1} & \multicolumn{2}{c:}{0.135} & \multicolumn{2}{c:}{0.058} & \multicolumn{2}{c|}{0.006} & 500 \\
+batch size & \multicolumn{2}{c:}{100} & \multicolumn{2}{c:}{1000} & \multicolumn{2}{c|}{10000} & \multicolumn{2}{c:}{72.7} & \multicolumn{2}{c:}{18.1} & \multicolumn{2}{c|}{9.3} & \multicolumn{2}{c:}{0.016} & \multicolumn{2}{c:}{0.065} & \multicolumn{2}{c|}{0.221} & 100 \\
+learning rate & \multicolumn{2}{c:}{0.1} & \multicolumn{2}{c:}{0.01} & \multicolumn{2}{c|}{0.001} & \multicolumn{2}{c:}{57.4} & \multicolumn{2}{c:}{30.6} & \multicolumn{2}{c|}{12.0} & \multicolumn{2}{c:}{0.04} & \multicolumn{2}{c:}{0.056} & \multicolumn{2}{c|}{0.189} & 0.1 \\
+$\varepsilon$ & \multicolumn{3}{c:}{1} & \multicolumn{3}{c|}{$10^{-7}$} & \multicolumn{3}{c:}{15.4} & \multicolumn{3}{c|}{84.6} & \multicolumn{3}{c:}{0.204} & \multicolumn{3}{c|}{0.02} & $10^{-7}$ \\
+\hline
+
+\caption{parameter influence regarding \textit{test loss} for the ChemEx dataset}
+\label{table:test_loss_ratios_chemex}
+\end{longtable}
+

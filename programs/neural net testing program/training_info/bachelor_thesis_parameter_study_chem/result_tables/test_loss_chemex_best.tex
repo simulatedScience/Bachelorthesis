@@ -1,0 +1,23 @@
+\begin{longtable}{|l|>{\columncolor{bestColumnColor}}l|l|l|l|l|}
+\hline
+\textbf{parameter name} & \multicolumn{5}{c|}{\textbf{best values}} \\
+\hline
+\textit{MAE}             & 0.11408 & 0.11452 & 0.11653 & 0.11709 & 0.12137 \\
+test loss                & 0.013018 & 0.0065444 & 0.013588 & 0.0068427 & 0.0073477 \\
+final validation loss    & 0.01339 & 0.0066957 & 0.01449 & 0.0070507 & 0.0072831 \\
+training time            & 515.53  & 540.87  & 61.619  & 63.538  & 536.95  \\
+{\color{equalParamColor} neurons per layer } & {\color{equalParamColor} (50, 10) } & {\color{equalParamColor} (50, 10) } & {\color{equalParamColor} (50, 10) } & {\color{equalParamColor} (50, 10) } & {\color{equalParamColor} (50, 10) } \\
+activation functions     & sigmoid & sigmoid & sigmoid & sigmoid & ReLU    \\
+{\color{equalParamColor} last activation function } & {\color{equalParamColor} linear } & {\color{equalParamColor} linear } & {\color{equalParamColor} linear } & {\color{equalParamColor} linear } & {\color{equalParamColor} linear } \\
+loss function            & MSE     & log cosh & MSE     & log cosh & log cosh \\
+{\color{equalParamColor} training data percentage } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } \\
+{\color{equalParamColor} number of epochs } & {\color{equalParamColor} 500 } & {\color{equalParamColor} 500 } & {\color{equalParamColor} 500 } & {\color{equalParamColor} 500 } & {\color{equalParamColor} 500 } \\
+batch size               & 100     & 100     & 1000    & 1000    & 100     \\
+{\color{equalParamColor} optimizer } & {\color{equalParamColor} Adam } & {\color{equalParamColor} Adam } & {\color{equalParamColor} Adam } & {\color{equalParamColor} Adam } & {\color{equalParamColor} Adam } \\
+learning rate            & 0.001   & 0.001   & 0.01    & 0.01    & 0.001   \\
+{\color{equalParamColor} $\varepsilon$ } & {\color{equalParamColor} $10^{-7}$ } & {\color{equalParamColor} $10^{-7}$ } & {\color{equalParamColor} $10^{-7}$ } & {\color{equalParamColor} $10^{-7}$ } & {\color{equalParamColor} $10^{-7}$ } \\
+\hline
+
+\caption{best settings regarding \textit{test loss} for the ChemEx dataset}
+\label{table:test_loss_best_chemex}
+\end{longtable}

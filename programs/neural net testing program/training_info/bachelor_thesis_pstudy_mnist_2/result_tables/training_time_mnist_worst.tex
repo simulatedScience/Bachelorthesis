@@ -1,0 +1,20 @@
+\begin{longtable}{|l|l|l|l|l|>{\columncolor{worstColumnColor}}l|}
+\hline
+\textbf{parameter name} & \multicolumn{5}{c|}{\textbf{worst values}} \\
+\hline
+\textit{training time}   &  106.16 &  106.61 &  106.64 &  106.92 &  106.93 \\
+{\color{equalParamColor} neurons per layer } & {\color{equalParamColor} (20, 15, 10) } & {\color{equalParamColor} (20, 15, 10) } & {\color{equalParamColor} (20, 15, 10) } & {\color{equalParamColor} (20, 15, 10) } & {\color{equalParamColor} (20, 15, 10) } \\
+{\color{equalParamColor} activation functions } & {\color{equalParamColor} sigmoid } & {\color{equalParamColor} sigmoid } & {\color{equalParamColor} sigmoid } & {\color{equalParamColor} sigmoid } & {\color{equalParamColor} sigmoid } \\
+{\color{equalParamColor} last activation function } & {\color{equalParamColor} softmax } & {\color{equalParamColor} softmax } & {\color{equalParamColor} softmax } & {\color{equalParamColor} softmax } & {\color{equalParamColor} softmax } \\
+{\color{equalParamColor} loss function } & {\color{equalParamColor} cat-cross } & {\color{equalParamColor} cat-cross } & {\color{equalParamColor} cat-cross } & {\color{equalParamColor} cat-cross } & {\color{equalParamColor} cat-cross } \\
+{\color{equalParamColor} training data percentage } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } & {\color{equalParamColor} 1 } \\
+{\color{equalParamColor} number of epochs } & {\color{equalParamColor} 50 } & {\color{equalParamColor} 50 } & {\color{equalParamColor} 50 } & {\color{equalParamColor} 50 } & {\color{equalParamColor} 50 } \\
+{\color{equalParamColor} batch size } & {\color{equalParamColor} 100 } & {\color{equalParamColor} 100 } & {\color{equalParamColor} 100 } & {\color{equalParamColor} 100 } & {\color{equalParamColor} 100 } \\
+{\color{equalParamColor} optimizer } & {\color{equalParamColor} cAdam } & {\color{equalParamColor} cAdam } & {\color{equalParamColor} cAdam } & {\color{equalParamColor} cAdam } & {\color{equalParamColor} cAdam } \\
+learning rate            & 0.001   & 0.01    & 0.1     & 0.01    & 0.1     \\
+$\varepsilon$            & 1.0     & 1.0     & 1.0     & $10^{-7}$ & $10^{-7}$ \\
+\hline
+
+\caption{worst settings regarding \textit{training time} for the MNIST dataset}
+\label{table:training_time_worst_mnist}
+\end{longtable}
