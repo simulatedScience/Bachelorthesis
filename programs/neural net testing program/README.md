@@ -22,8 +22,8 @@ The method `print_param_influcence_tables` in `result_output.py` assumes that th
 
 It's likely that there are a few similar issues that require a bit of work before using this program for other studies. It is also possible to combine the steps 2. and 3.1 of the workflow described above (automatically start step 3.1 after 2.).
 
-## Missing files
+## datasets
 
-Reproducing the experiments requires the ChemEx dataset and code to read that data into python. Since I did not write that code myself or assemble the dataset, I am not including those here. Both the data and code to read it were provided to me by Franz Bethke.
+The MNIST dataset used for most of the experiments is included with Tensorflow and freely available online.
 
-The MNIST dataset used for the remaining experiments is included with Tensorflow and freely available online.
+The remaining experiment uses the dataset contained in the folder `chem_data`. Both the data and code to read it were provided to me by Franz Bethke. Authors are given in the corresponding files.
